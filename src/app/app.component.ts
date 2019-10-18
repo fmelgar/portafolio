@@ -7,8 +7,5 @@ import { InfoPaginaService } from './services/info-pagina.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
-  constructor(public _infoPaginaService:InfoPaginaService){
-
-  }
+  constructor(public infoPaginaService: InfoPaginaService) {}
 }
