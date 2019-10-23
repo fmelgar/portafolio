@@ -1,3 +1,4 @@
+import { SearchComponent } from './pages/search/search.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PortafolioComponent } from './pages/portafolio/portafolio.component';
@@ -7,7 +8,8 @@ import { PortafolioItemComponent } from './pages/portafolio-item/portafolio-item
 const routes: Routes = [
     { path: 'home', component: PortafolioComponent },
     { path: 'about', component: AboutComponent },
-    { path: 'item', component: PortafolioItemComponent },
+    { path: 'item/:id', component: PortafolioItemComponent },
+    { path: 'search/:termino', component: SearchComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 
